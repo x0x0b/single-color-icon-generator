@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>単色アイコン作成ツール</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="mb-0">monochro icon wallpaper</h1>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <div class="input-group">
+                  <input
+                    type="color"
+                    class="form-control form-control-lg"
+                    id="color-picker"
+                    value="#000000"
+                  />
+                  <button
+                    id="random-color-btn"
+                    class="btn btn-outline-secondary"
+                  >
+                    Random
+                  </button>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="input-group mb-1">
+                  <div>
+                    <div class="btn-group">
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="1024,1024"
+                        autocomplete="off"
+                        id="preset-1024"
+                        checked
+                      />
+                      <label class="btn btn-outline-primary" for="preset-1024"
+                        >1024x1024</label
+                      >
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="512,512"
+                        autocomplete="off"
+                        id="preset-512"
+                        checked
+                      />
+                      <label class="btn btn-outline-primary" for="preset-512"
+                        >512x512</label
+                      >
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="256,256"
+                        autocomplete="off"
+                        id="preset-256"
+                      />
+                      <label class="btn btn-outline-primary" for="preset-256"
+                        >256x256</label
+                      >
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="128,128"
+                        autocomplete="off"
+                        id="preset-128"
+                      />
+                      <label class="btn btn-outline-primary" for="preset-128"
+                        >128x128</label
+                      >
+                    </div>
+                    <div class="btn-group">
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="1920,1080"
+                        autocomplete="off"
+                        id="preset-fullhd"
+                      />
+                      <label class="btn btn-outline-primary" for="preset-fullhd"
+                        >FullHD</label
+                      >
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="2560,1440"
+                        autocomplete="off"
+                        id="preset-wqhd"
+                      />
+                      <label class="btn btn-outline-primary" for="preset-wqhd"
+                        >WQHD</label
+                      >
+                      <input
+                        class="btn-check"
+                        type="radio"
+                        name="preset"
+                        value="3840,2160"
+                        autocomplete="off"
+                        id="preset-4k"
+                      />
+                      <label class="btn btn-outline-primary" for="preset-4k"
+                        >4K</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div id="resolution" class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="width"
+                    value="512"
+                    min="1"
+                    max="10000"
+                    step="1"
+                  />
+                  <span class="input-group-text">x</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="height"
+                    value="512"
+                    min="1"
+                    max="10000"
+                    step="1"
+                  />
+                </div>
+              </div>
+
+              <button id="download-btn" class="btn btn-primary btn-block mb-4">
+                Download
+              </button>
+              <div class="form-group text-center">
+                <div class="canvas-wrapper">
+                  <canvas
+                    id="canvas"
+                    width="512"
+                    height="512"
+                    class="img-fluid mb-3"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </body>
+</html>
