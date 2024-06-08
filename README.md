@@ -1,0 +1,1 @@
+# single-color-icon-generator
